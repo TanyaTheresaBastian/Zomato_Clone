@@ -1,0 +1,209 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+#header-image1{
+    position: relative;
+    width: 100vw;
+    height: 500px;
+    background-image: linear-gradient(to right, rgba(0,0,0,0.4), rgba(0,0,0,0.6)), url("https://ugc.zenchef.com/3/1/4/0/2/2/6/7/3/2/1476532420_362/9c85b83463cfed6cbd09602ed4811279.clandscape_hd.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+header{
+    width: 100vw;
+    height: 60px;
+}
+.nav-menu{
+    width: 85vw;
+    height: 60px;
+
+}
+.zomato{
+    display: block;
+    font-weight: bolder;
+    color: white;
+    text-align:center;
+    font-size: 70px;
+    margin: 0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.head-text{
+    color: white;
+    text-align: center;
+    margin: 0;
+    font-size: 40px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+}
+.header-flex{
+    margin-top: 100px;
+}
+.nav-link{
+    border-bottom: 0px solid black;
+    transition: border-bottom 0.3s;
+    cursor: pointer;
+    font-family:sans-serif
+}
+.nav-link:hover{
+    border-bottom: 5px solid white;
+}
+#cuisines{
+    width: 34vw;
+    height: 60px;
+    background-color: white;
+    border:none;
+    padding-left: 20px;
+    outline: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.search-btn{
+    width: 100px;
+    background: white;
+    color:black;
+    border: none;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    cursor: pointer;
+    font-size: 20px;
+    
+}
+
+#first-section{
+    margin-top: 50px;
+    margin-bottom: 50px;               
+}
+.card{
+    width: 100%;
+    height: 200px;
+    background-color: white;
+    border:none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px white;
+    overflow: hidden;
+    
+    transition: 0.3s transform cubic-bezier(.155,1.105,.295,1.12),0.3s box-shadow,0.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+    margin-bottom: 10px;
+}
+.card:hover{
+    box-shadow: 1px 1px 10px black;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+.card-bottom{
+    position: absolute;
+    background-color: white;
+    height: 50px;
+    width: 100%;
+    margin-top: 150px;
+}
+
+#get-app{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: rgba(234, 241, 130, 0.1);
+
+}
+.email-input{
+    width: 300px;
+    height: 40px;
+    padding-left: 10px ;
+    border: 1px solid grey;
+    outline: none;
+    border-radius: 10px;
+    background-color: white;
+}
+.phone-input{
+    visibility: hidden;
+    width: 300px;
+    height: 40px;
+    padding-left: 10px ;
+    border: 1px solid grey;
+    outline: none;
+    border-radius: 10px;
+    background-color: white;
+}
+@media only screen and (max-width: 768px){
+    .locations-div{
+        margin-bottom: 10px;
+    }
+}
+   
+.card-img-top {
+  width: 100%;
+  height: 12vw;
+  object-fit: cover;
+}
+
+.card-text {
+  color:rgb(79, 79, 79);
+  font-weight: 400;
+  font-size: 0.9rem;
+}
+
+.restaurantCard {
+   cursor: pointer; 
+  }
+
+.search_box_wrap {
+    padding: 0 10px;
+  }
+  .city_select {
+    position: relative;
+  }
+  
+  #city-input{
+    font-size: 12px;
+    border: 1px solid #e4e4e4;
+    padding: 10px 10px 10px 27px;
+    margin: 0;
+    float: left;
+    width: 20%;
+    background-repeat: no-repeat;
+    background-position: 7px center;
+    background-size: 25px auto;
+  }
+  #search_input {
+    font-size: 10px;
+    border: 1px solid #e4e4e4;
+    padding: 10px 10px 10px 27px;
+    margin: 0;
+    float: left;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: 7px center;
+    background-size: 10px auto;
+  }
+  #city-input {
+    background-image: url("https://b.zmtcdn.com/images/widgets/location.png?output-format=webp");
+    border-right: 0;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+  }
+ 
+
+  .search_box_wrap {
+    width: 100%;
+    display: table;
+    vertical-align: top;
+  }
+  .search_box {
+    display: table-cell;
+    vertical-align: top;
+    width: 60%;
+  }
+  .search_btn {
+    display: table-cell;
+    vertical-align: top;
+    width: 15%;
+  }
+  .search_box_wrap.no_city .search_box {
+    width: 77%;
+  }
